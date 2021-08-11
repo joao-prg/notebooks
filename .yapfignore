@@ -1,0 +1,10 @@
+venv/*
+*.sh
+.env
+*.in
+*.ini
+*.md
+*.xml
+*.cfg
+*.lock
+Pipfile*
