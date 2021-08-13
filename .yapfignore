@@ -1,3 +1,4 @@
+docs/
 venv/*
 *.sh
 .env
@@ -5,6 +6,9 @@ venv/*
 *.ini
 *.md
 *.xml
-*.cfg
+*.cfgman_pages
 *.lock
 Pipfile*
+Makefile
+*.txt
+.html

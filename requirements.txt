@@ -13,3 +13,6 @@ pydocstyle
 yapf
 isort
 unittest2
+add-trailing-comma
+mlflow
+scikit-learn

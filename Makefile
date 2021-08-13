@@ -27,7 +27,7 @@ test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 
 ## Install Python Dependencies
-requirements: test_environment
+install_dependencies: test_environment
 	(source venv/bin/activate;)
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
@@ -49,10 +49,8 @@ doccheck:
 
 ## Run code formatting analysis
 code-formatting-analysis:
-	cd $(SRC_DIR); yapf --recursive --diff *
-	cd $(SRC_DIR); isort --check-only *
-	cd $(TESTS_DIR); yapf --recursive --diff *
-	cd $(TESTS_DIR); isort --check-only *
+	yapf --recursive --diff *
+	isort --check-only *
 
 ## Run static analysis
 static-analysis: project-info checkstyle typecheck doccheck code-formatting-analysis
