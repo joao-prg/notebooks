@@ -1,6 +1,12 @@
 Getting started
 ===============
 
-This is where you describe how to get set up on a clean install, including the
-commands necessary to get the raw data (using the `sync_data_from_s3` command,
-for example), and then how to make the cleaned, final data sets.
+#. make create_environment
+#. make install_dependencies
+#. Install code formatter
+    * Pycharm
+        #. Preferences -> Tools -> External Tools -> Add
+        #. Name: Code Formatter Tools
+        #. Description: Automatic code formatting using isort and YAPF
+        #. Arguments: "$FilePath$"
+        #. Add a keymap
