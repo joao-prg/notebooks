@@ -1,4 +1,3 @@
-import version
 from setuptools import find_packages, setup
 
 tests_requires = [
@@ -18,6 +17,8 @@ code_formatting_requires = [
 ]
 
 exclude_packages = ['tests*']
+
+VERSION = '0.0.1'
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
@@ -39,12 +40,12 @@ def is_version_valid(version_number: str) -> bool:
         [p.isdigit() for p in parts], )
 
 
-if not is_version_valid(str(version.VERSION)):
+if not is_version_valid(VERSION):
     RuntimeError("Invalid TAG version, expected format '0.0.0'.")
 
 setup(
     name='notebooks',
-    version=str(version.VERSION),
+    version=VERSION,
     author='João Gonçalves',
     description='Data Science notebooks',
     long_description=long_description,

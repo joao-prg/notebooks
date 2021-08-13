@@ -14,5 +14,6 @@ yapf
 isort
 unittest2
 add-trailing-comma
+tox
 mlflow
 scikit-learn
