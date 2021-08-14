@@ -61,7 +61,7 @@ static-analysis: project-info checkstyle typecheck doccheck code-formatting-anal
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
-	rm -rf .ipynb_checkpoints
+	rm -rf .ipynb_checkpoints .tox notebooks.egg-info
 
 ## Run unit tests
 unit-tests: project-info
