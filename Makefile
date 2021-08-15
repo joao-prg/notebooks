@@ -80,7 +80,7 @@ list_jupyter_venvs:
 	jupyter kernelspec list
 
 ## Start Jupyter server
-launch_jupyter:
+launch_jupyterlab:
 	python -m jupyterlab
 
 ## Install JupyterLab extensions
@@ -98,3 +98,6 @@ uninstall_jupyterlab_extensions:
 ## List JupyterLab extensions
 list_jupyterlab_extensions:
 	jupyter labextension list
+
+convert_notebook_to_pdf:
+	python -m jupyter nbconvert --to pdf $(notebook_path)
