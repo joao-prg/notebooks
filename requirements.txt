@@ -29,9 +29,14 @@ ipympl
 ipython-sql
 matplotlib
 plotly
+kaleido
 ipywidgets>=7.6
 bokeh
 dash
+wordcloud
+folium
 pandas
+xlrd
+openpyxl
 mlflow
 scikit-learn
