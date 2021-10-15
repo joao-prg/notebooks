@@ -30,6 +30,7 @@ ipython-sql
 matplotlib
 plotly
 kaleido
+squarify
 ipywidgets>=7.6
 bokeh
 dash
