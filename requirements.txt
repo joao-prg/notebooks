@@ -21,10 +21,8 @@ jupyterlab
 jupyterlab-git
 jupyterlab_code_formatter
 jupyterlab_execute_time
-jupyterlab-kite>=2.0.2
 jupyter_bokeh
 jupyter-dash
-jupyterlab-dash
 ipympl
 ipython-sql
 matplotlib
@@ -33,7 +31,6 @@ kaleido
 squarify
 ipywidgets>=7.6
 bokeh
-dash
 wordcloud
 folium
 pandas
@@ -41,3 +38,5 @@ xlrd
 openpyxl
 mlflow
 scikit-learn
+geopandas
+geopy
